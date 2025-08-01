@@ -24,7 +24,7 @@ const (
 	attempts = 20
 
 	// Attempts connection
-	httpURL        = "http://" + host + ":8080"
+	httpURL        = "http://" + host + ":8001"
 	healthPath     = httpURL + "/healthz"
 	requestTimeout = 5 * time.Second
 
@@ -32,7 +32,7 @@ const (
 	basePathV1 = httpURL + "/v1"
 
 	// gRPC
-	grpcURL = host + ":8081"
+	grpcURL = host + ":9001"
 
 	// RabbitMQ RPC
 	rmqURL            = "amqp://guest:guest@rabbitmq:5672/"
