@@ -33,11 +33,7 @@ const (
 	// gRPC
 	grpcURL = host + ":9001"
 
-	// RabbitMQ RPC
-	rmqURL            = "amqp://guest:guest@rabbitmq:5672/"
-	rpcServerExchange = "rpc_server"
-	rpcClientExchange = "rpc_client"
-	requests          = 10
+	requests = 10
 
 	// Test data
 	expectedOriginal = "текст для перевода"
