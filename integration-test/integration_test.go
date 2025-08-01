@@ -20,7 +20,7 @@ import (
 const (
 	// Base settings
 	host     = "app"
-	attempts = 60
+	attempts = 120
 
 	// Attempts connection
 	httpURL        = "http://" + host + ":8001"
@@ -84,7 +84,7 @@ func healthCheck(attempts int) error {
 
 		log.Printf("Integration tests: url %s is not available, attempts left: %d", healthPath, attempts)
 
-		time.Sleep(2 * time.Second)
+		time.Sleep(3 * time.Second)
 
 		attempts--
 	}
